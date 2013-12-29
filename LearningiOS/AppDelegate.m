@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "StartUpViewController.h"
 
 @implementation AppDelegate
 
@@ -14,7 +15,15 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor blueColor];
+    
+    
+    self.window.rootViewController = [StartUpViewController new];
+    UIView *mainView = self.window.rootViewController.view;
+    UIView *v = [[UIView alloc] initWithFrame:CGRectMake(100, 100, 50, 50)];
+    v.backgroundColor = [UIColor redColor];
+    [mainView addSubview:v];
+    
+    self.window.backgroundColor = [UIColor greenColor];
     [self.window makeKeyAndVisible];
     return YES;
 }
