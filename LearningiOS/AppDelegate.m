@@ -18,12 +18,12 @@
     
     
     self.window.rootViewController = [StartUpViewController new];
-    UIView *mainView = self.window.rootViewController.view;
-    UIView *v = [[UIView alloc] initWithFrame:CGRectMake(100, 100, 50, 50)];
-    v.backgroundColor = [UIColor redColor];
-    [mainView addSubview:v];
+//    UIView *mainView = self.window.rootViewController.view;
+//    UIView *v = [[UIView alloc] initWithFrame:CGRectMake(100, 100, 50, 50)];
+//    v.backgroundColor = [UIColor redColor];
+//    [mainView addSubview:v];
     
-    self.window.backgroundColor = [UIColor greenColor];
+    self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
 }

@@ -19,6 +19,7 @@
 		F0A6543B18708F5E00C0EFB2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0A6542318708F5E00C0EFB2 /* UIKit.framework */; };
 		F0A6544318708F5E00C0EFB2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F0A6544118708F5E00C0EFB2 /* InfoPlist.strings */; };
 		F0A6544518708F5E00C0EFB2 /* LearningiOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F0A6544418708F5E00C0EFB2 /* LearningiOSTests.m */; };
+		F0A654501870911D00C0EFB2 /* StartUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0A6544F1870911D00C0EFB2 /* StartUpViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,8 @@
 		F0A6544018708F5E00C0EFB2 /* LearningiOSTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LearningiOSTests-Info.plist"; sourceTree = "<group>"; };
 		F0A6544218708F5E00C0EFB2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F0A6544418708F5E00C0EFB2 /* LearningiOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LearningiOSTests.m; sourceTree = "<group>"; };
+		F0A6544E1870911D00C0EFB2 /* StartUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartUpViewController.h; sourceTree = "<group>"; };
+		F0A6544F1870911D00C0EFB2 /* StartUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartUpViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +112,8 @@
 			children = (
 				F0A6542E18708F5E00C0EFB2 /* AppDelegate.h */,
 				F0A6542F18708F5E00C0EFB2 /* AppDelegate.m */,
+				F0A6544E1870911D00C0EFB2 /* StartUpViewController.h */,
+				F0A6544F1870911D00C0EFB2 /* StartUpViewController.m */,
 				F0A6543118708F5E00C0EFB2 /* Images.xcassets */,
 				F0A6542618708F5E00C0EFB2 /* Supporting Files */,
 			);
@@ -241,6 +246,7 @@
 			files = (
 				F0A6543018708F5E00C0EFB2 /* AppDelegate.m in Sources */,
 				F0A6542C18708F5E00C0EFB2 /* main.m in Sources */,
+				F0A654501870911D00C0EFB2 /* StartUpViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
