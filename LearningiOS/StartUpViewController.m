@@ -29,26 +29,30 @@
 	// Do any additional setup after loading the view.
     
     UIView *mainView = self.view;
-//    mainView.hidden = YES;
-//    UIView *v = [[UIView alloc]initWithFrame:CGRectMake(100, 100, 50, 50)];
-//    [v setBackgroundColor:[UIColor redColor]];
-//    [mainView addSubview:v];
     
-    UIView *v1 = [[UIView alloc] initWithFrame:CGRectMake(113, 111, 132, 194)];
-    v1.backgroundColor = [UIColor colorWithRed:0 green:0 blue:1 alpha:1];
-   
-//    UIView *v2 = [[UIView alloc]initWithFrame:CGRectMake(41, 56, 132, 194)];
-    UIView *v2 = [[UIView alloc] initWithFrame:CGRectInset(v1.bounds, 10, 10)];
-    v2.backgroundColor = [UIColor colorWithRed:.5 green:1 blue:0 alpha:1];
+    UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:mainView.bounds];
     
-    UIView *v3 = [[UIView alloc]initWithFrame:CGRectMake(43, 197, 160, 230)];
-    v3.backgroundColor = [UIColor colorWithRed:1 green:0 blue:0 alpha:1];
+    scrollView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     
-    [mainView addSubview:v1];
-//    [mainView addSubview:v2];
-    [v1 addSubview:v2];
-    [mainView addSubview:v3];
+    [mainView addSubview:scrollView];
     
+    CGFloat y = 10;
+    for (int i=0; i<30; i++) {
+        UILabel *lab = [UILabel new];
+        lab.text = [NSString stringWithFormat:@"Label %d", i+1];
+        [lab sizeToFit];
+        
+        CGRect f = lab.frame;
+        f.origin = CGPointMake(10, y);
+        lab.frame = f;
+        [scrollView addSubview: lab];
+        y+= lab.bounds.size.height + 10;
+    }
+    
+    CGSize size = scrollView.bounds.size;
+    size.height = y;
+    
+    scrollView.contentSize = size;
     
 }
 
